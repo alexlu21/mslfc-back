@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: maulasfc
+  datasource:
+    url: jdbc:mysql://junction.proxy.rlwy.net:41612/railway?autoReconnect=true&useSSL=false
+    username: root
+    password: znFtCmMvUzWihgVGCboGpfWNISjrfuQp
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      max-lifetime: 1200000 # Reduce el tiempo si el servidor de Railway cierra las conexiones antes de 30 minutos
+      connection-timeout: 30000 # Tiempo máximo de espera para obtener una conexión
+      idle-timeout: 600000 # Tiempo para conexiones inactivas (10 minutos)
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
