@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin("http://localhost:5173")
+@CrossOrigin("https://mls-fc-production.up.railway.app")
 @RestController
 @RequestMapping("/persona")
 @RequiredArgsConstructor
